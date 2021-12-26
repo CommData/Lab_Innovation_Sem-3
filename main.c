@@ -96,14 +96,20 @@ int main()
     insertionSort(ArrayOne, input);
     t = clock() - t;
     double time_taken = ((double)t) / CLOCKS_PER_SEC;
-    printf("Insertion sort took %f seconds to sort an array of input size %d\n", time_taken, input);
+    printf("\nInsertion sort took %f seconds to sort an array of input size %d\n", time_taken, input);
 
     clock_t u;
     u = clock();
     mergeSort(ArrayTwo, 0, input - 1);
     u = clock() - u;
     double time_takenMS = ((double)u) / CLOCKS_PER_SEC;
-    printf("Merge sort took %f seconds to sort an array of input size %d\n", time_takenMS, input);
+    printf("\nMerge sort took %f seconds to sort an array of input size %d\n", time_takenMS, input);
+    
+    if(time_takenMS > time_taken){
+        printf("\nMerge sort took more time to sort the algo\n");
+    }else{
+        printf("\nInsertion sort took more time to sort the algo\n");
+    }
 
     return 0;
 }
