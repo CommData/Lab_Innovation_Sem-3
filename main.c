@@ -76,7 +76,7 @@ void mergeSort(int arr[], int l, int r)
 }
 int main()
 {
-    srand(time(0));
+    //srand(time(0));
     int input;
     printf("Enter input size: ");
     scanf("%d", &input);
