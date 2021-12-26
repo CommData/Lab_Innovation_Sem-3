@@ -108,7 +108,7 @@ int main()
     if(time_takenMS > time_taken){
         printf("\nMerge sort took more time to sort the algo\n");
     }else{
-        printf("\nInsertion sort took more time to sort the algo\n");
+        printf("\nInsertion sort took more time to sort the Array\n");
     }
 
     return 0;
